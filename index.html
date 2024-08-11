@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cardápio Fast Food</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Cardápio Fast Food</h1>
+
+  <!-- Apresentação do cardápio -->
+  <div id="menu">
+    <!-- Categoria Hambúrgueres -->
+    <div class="categoria">
+      <h2>Hambúrgueres</h2>
+        <label><input type="checkbox" name="item" value="hamburguer-americano - R$12,00">Hambúrguer Americano - R$12,00</label> <br>
+        <label><input type="checkbox" name="item" value="hamburguer-xtudo - R$15,00">Hamburguer Xtudo - R$15,00</label> <br>
+        <label><input type="checkbox" name="item" value="hamburguer-xbacon - R$20,00">Hambúrguer Xbacon - R$20,00</label> <br>
+        <label><input type="checkbox" name="item" value="hamburguer-xburguer - R$10,00">Hambúrguer Xburguer - R$10,00</label> <br>
+      <!-- Adicione mais itens aqui -->
+    </div>
+    <!-- Categoria Salgados -->
+    <div class="categoria">
+      <h2>Salgados</h2>
+      <label><input type="checkbox" name="item" value="Esfirra - R$10,00">Esfirra - R$10,00</label> <br>
+      <label><input type="checkbox" name="item" value="Pastel de carne -R$12,00">Pastel - R$12,00</label> <br>
+      <label><input type="checkbox" name="item" value="Bolinhas de queijo - R$8,00">Bolinhas de queijo - R$8,00</label> <br>
+      <!-- Adicione itens de salgados aqui -->
+    </div>
+    <!-- Categoria Bebidas -->
+    <div class="categoria">
+      <h2>Bebidas</h2>
+      <label><input type="checkbox" name="item" value="Refrigerante - R$10,00">Refrigerante - R$10,00</label> <br>
+      <label><input type="checkbox" name="item" value="Vitaminas - R$15,00">Vitaminas - R$15,00</label> <br>
+      <label><input type="checkbox" name="item" value="Água - R$5,00">Água - R$5,00</label> <br>
+      <!-- Adicione itens de bebidas aqui -->
+    </div>
+  </div>
+
+  <!-- Gerenciamento do pedido -->
+  <div id="carrinho">
+    <h2>Carrinho de Compras</h2>
+    <!-- Itens selecionados serão listados aqui -->
+  </div>
+
+  <!-- Botões de ação -->
+  <button class="botao" onclick="limparCarrinho()">Limpar Carrinho</button>
+  <button class="botao" onclick="finalizarPedido()">Finalizar Pedido</button>
+  <button id="adicionar-itens" class="botao" onclick="adicionarItensSelecionados()">Adicionar Itens Selecionados</button>
+  <button class="botao" onclick="removerItem()">Remover item</button>
+
+  <!-- Finalização do pedido -->
+  <div id="finalizacao" style="display:none;">
+    <!-- Opções de pagamento e formulário de entrega serão inseridos aqui -->
+  </div>
+
+  <!-- Rodapé-->
+  <footer>
+    <p>Site desenvolvido por Antonio Silvano do curso de Análise e Desenvolvimento de Sistemas da Uninassal.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
